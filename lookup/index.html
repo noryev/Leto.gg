@@ -4,6 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -12,6 +17,7 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+
 
         .topnav {
             overflow: hidden;
@@ -83,6 +89,9 @@
             .topnav input[type=text] {
                 border: 1px solid #ccc;
             }
+
+
+
         }
     </style>
 </head>
@@ -94,7 +103,7 @@
         <a href="http://galaxyx.io">About</a>
         <a href="https://github.com/noryev/Leto">Project Repo</a>
         <div class="search-container">
-            <form action="/action_page.php">
+            <form action="#home">
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit">Submit</button>
             </form>
@@ -107,9 +116,6 @@
         <p>Built in conjunction with the Open-Web/privacy first community to provide anonymous usefull data to
             developers and users in the IPFS/open-web ecosystem</p>
     </div>
-
-    <h2>Toggle Dark/Light Mode</h2>
-    <p>Click the button to toggle between dark and light mode for this page.</p>
 
     <button onclick="myFunction()">Toggle dark mode</button>
 
