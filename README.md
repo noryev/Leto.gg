@@ -1,4 +1,4 @@
-# Leto.gg/lookup
+# Leto.gg(this will soon change to leto.gg/lookup)
 
 ## This is the public facing repo for leto.gg- a anonymous IPFS metrics gateway
 
