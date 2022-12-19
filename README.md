@@ -2,4 +2,4 @@
 
 ## This is the public facing repo for leto.gg- a anonymous IPFS metrics gateway
 
-## leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
+## https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
