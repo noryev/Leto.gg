@@ -9,6 +9,3 @@ Leto.gg(this will soon change to leto.gg/lookup)
 # Form-Processing
 Started with HTMLPane for preliminary implementations. Will probably move up to Node.js when it makes more sense.
 
-# Random development notes
-Sleeper Functionality added to the lamda server attached- Wake on arrival
-
