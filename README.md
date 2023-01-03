@@ -8,5 +8,4 @@ Leto.gg(this will soon change to leto.gg/lookup)
 
 # Form-Processing
 Started with HTMLPane for preliminary implementations. Will probably move up to Node.js when it makes more sense.
-
-# Startup Conventional Gateway and tie to engine
+- Startup Conventional Gateway and tie to engine
