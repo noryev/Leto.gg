@@ -14,7 +14,7 @@ Leto.gg(this will soon change to leto.gg/lookup)
 # Form-Processing
 Started with HTMLPane for preliminary implementations. Will probably move up to Node.js when it makes more sense. More information coming soon! 
 
-Notes about Relative linking on IPFS... 
+### Notes about Relative linking on IPFS... 
 Though it is not required, it is strongly recommended that websites hosted on IPFS use only relative links, unless linking to a different domain. This is because data can be accessed in many different (but ultimately equivalent) ways:
 
 From your custom domain: https://ipfs.tech/index.html
