@@ -1,5 +1,4 @@
-# This is the public facing repo for leto.gg, an anonymous IPFS metrics Gateway/CDN
-Leto.gg(this will soon change to leto.gg/lookup)
+# This is the public endpoint for leto.gg
 
 ## https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
 
