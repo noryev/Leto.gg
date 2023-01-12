@@ -115,7 +115,9 @@
             <button type="submit" id="submit">Submit</button>
         </form>
         <div id="result"></div>
+
         <script>
+
             const form = document.querySelector('form')
             const result = document.querySelector('#result')
 
@@ -123,13 +125,18 @@
                 e.preventDefault()
                 const hash = form.querySelector('#hash').value
 
-                fetch(`/cid-requests?hash=${hash}`)
+                fetch(`http://your-api-endpoint.com/cid-requests?hash=${hash}`)
                     .then(res => res.json())
                     .then(data => {
                         result.innerHTML = `Number of CID requests: ${data.cidRequests}`
                     })
+                    .catch(error => {
+                        result.innerHTML = `An error occurred: ${error}`;
+                    });
             })
+
         </script>
+
     </div>
 
     <!--
