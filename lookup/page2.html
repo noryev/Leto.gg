@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CID Request Search</title>
+</head>
+
+<body>
+    <form>
+        <label for="hash">Enter CID Hash:</label>
+        <input type="text" id="hash" name="hash">
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        const form = document.querySelector('form')
+        const result = document.querySelector('#result')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            const hash = form.querySelector('#hash').value
+
+            fetch(`/cid-requests?hash=${hash}`)
+                .then(res => res.json())
+                .then(data => {
+                    result.innerHTML = `Number of CID requests: ${data.cidRequests}`
+                })
+        })
+    </script>
+</body>
+
+</html>

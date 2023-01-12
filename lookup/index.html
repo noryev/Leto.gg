@@ -6,8 +6,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
     <style>
         .dark-mode {
             background-color: black;
@@ -107,12 +105,27 @@
         <a class="active" href="#">Home</a>
         <a href="http://galaxyx.io">Team</a>
         <a href="https://github.com/noryev/Leto">Project Repo</a>
-        <div class="search-container">
-            <form action="#home">
-                <input type="text" placeholder="lookup cid/bafy" name="search">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        <form>
+            <label for="hash">Enter CID Hash:</label>
+            <input type="text" id="hash" name="hash">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+        <script>
+            const form = document.querySelector('form')
+            const result = document.querySelector('#result')
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                const hash = form.querySelector('#hash').value
+
+                fetch(`/cid-requests?hash=${hash}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        result.innerHTML = `Number of CID requests: ${data.cidRequests}`
+                    })
+            })
+        </script>
     </div>
 
     <!--
@@ -128,7 +141,15 @@
         <p><a href="https://github.com/noryev/leto-gateway/">Project Github</a></p>
         <p>Currently this project is NOT functioning... come back soon</p>
     </div>
-    <p> </p>
+    <p>
+
+
+
+
+    </p>
+
+
+
     <button onclick="myFunction()">Toggle dark mode</button>
 
     <script>
