@@ -125,6 +125,8 @@
                 e.preventDefault()
                 const hash = form.querySelector('#hash').value
 
+                // Pair this line below with the Leto Metrics API via the engine
+                // fetch(`http://leto.gg/cid-requests?hash=${hash}`) 
                 fetch(`http://your-api-endpoint.com/cid-requests?hash=${hash}`)
                     .then(res => res.json())
                     .then(data => {
