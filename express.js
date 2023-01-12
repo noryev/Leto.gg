@@ -1,6 +1,8 @@
 const express = require('express');
 const { Client } = require('@elastic/elasticsearch');
+const cors = require('cors');
 const app = express();
+app.use(cors());
 
 const client = new Client({
     node: 'http://localhost:9200'
