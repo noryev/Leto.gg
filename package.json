@@ -1,0 +1,23 @@
+{
+  "name": "leto.gg",
+  "version": "1.1.0",
+  "description": "An api for anon metrics on IPFS",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noryev/Leto.gg.git"
+  },
+  "author": "noryev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noryev/Leto.gg/issues"
+  },
+  "homepage": "https://github.com/noryev/Leto.gg#readme",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.6.0",
+    "express": "^4.18.2"
+  }
+}
