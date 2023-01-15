@@ -1,7 +1,7 @@
 # This repo is dedicated to the website Leto.gg as well as leto.gg/lookup
 
 
-## Currently; https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
+## Currently https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
 
 ### Data-Points
 - How many times an IPFS object was requested via the leto.gg Gateway?
