@@ -4,6 +4,7 @@ This repo is dedicated to the public endpoint of leto.gg. This repo consists of 
 # Table of Contents
 - [Usage](#usage)
 - [Development](#development)
+- [Setup](#setup)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -38,6 +39,10 @@ console.log(query);
 Currently our implementation is through Elasic Observability for log parsing and were using S3 for hosting the public endpoint 
 
 Currently https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
+
+Elastic Configuration
+
+# Setup
 
 # License
 MIT + Apache 2.0
