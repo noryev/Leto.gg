@@ -1,5 +1,5 @@
 # Leto.gg/lookup HTTP API
-This repo is dedicated to the public endpoint of leto.gg. This repo consists of the main website as well as an example set of API code to retrieve how many requests an IPFS object 
+This repo is dedicated to the public endpoint of leto.gg. This repo consists of the main website as well as an example set of API code to retrieve the number of requests of an IPFS CID/BAFY
 
 # Table of Contents
 - [Usage](#usage)
@@ -34,6 +34,9 @@ console.log(query);
 
 
 # Development
+
+Currently our implementation is through Elasic Observability for log parsing and were using S3 for hosting the public endpoint 
+
 Currently https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
 
 # License
