@@ -35,5 +35,5 @@ console.log(data);
 # Development
 Currently https://leto.gg redirects to >> https://s3.amazonaws.com/leto.gg/index.html
 
-# license
+# License
 MIT + Apache 2.0
