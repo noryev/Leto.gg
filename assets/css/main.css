@@ -19,9 +19,11 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
+  --color-primary: #ffffff;
+  --color-secondary: #ae629d;
 }
+/* Old Colors 
+/* --color-secondary: #f85a40;
 
 /* Smooth scroll behavior */
 :root {
@@ -46,14 +48,19 @@ a:hover {
   text-decoration: none;
 }
 
+logocolor {
+  color: #222222;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
+
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -144,11 +151,11 @@ section {
   text-decoration: underline;
 }
 
-.breadcrumbs nav ol li+li {
+.breadcrumbs nav ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs nav ol li+li::before {
+.breadcrumbs nav ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: var(--color-secondary);
@@ -269,7 +276,6 @@ section {
 }
 
 @media (max-width: 575px) {
-
   .topbar .contact-info i a,
   .topbar .contact-info i span {
     font-size: 13px;
@@ -359,7 +365,7 @@ section {
     position: relative;
   }
 
-  .navbar>ul>li {
+  .navbar > ul > li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
@@ -386,7 +392,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  .navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -400,7 +406,7 @@ section {
   }
 
   .navbar a:hover:before,
-  .navbar li:hover>a:before,
+  .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -409,7 +415,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -447,11 +453,11 @@ section {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: var(--color-secondary);
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -463,7 +469,7 @@ section {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -476,13 +482,12 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -539,7 +544,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #fff;
   }
 
@@ -569,8 +574,8 @@ section {
     border: 1px solid #006459;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -1272,7 +1277,6 @@ section {
 }
 
 @media (max-width: 575px) {
-
   .portfolio-details .swiper-button-prev,
   .portfolio-details .swiper-button-next {
     display: none;
@@ -1820,7 +1824,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -2221,7 +2225,7 @@ section {
   margin: 0;
 }
 
-.blog .blog-details .meta-top ul li+li {
+.blog .blog-details .meta-top ul li + li {
   padding-left: 20px;
 }
 
@@ -2280,7 +2284,7 @@ section {
   display: inline-block;
 }
 
-.blog .blog-details .meta-bottom .tags li+li::before {
+.blog .blog-details .meta-bottom .tags li + li::before {
   padding-right: 6px;
   color: var(--color-default);
   content: ",";
@@ -2346,7 +2350,7 @@ section {
   color: var(--color-default);
 }
 
-.blog .sidebar .sidebar-item+.sidebar-item {
+.blog .sidebar .sidebar-item + .sidebar-item {
   margin-top: 40px;
 }
 
@@ -2399,7 +2403,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -2418,7 +2422,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
