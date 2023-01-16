@@ -1,4 +1,5 @@
 # Leto.gg/lookup HTTP API
+This repo is dedicated to the public endpoint of leto.gg. This repo consists of the main website as well as an example set of API code to retrieve how many requests an IPFS object 
 
 # Table of Contents
 - [Usage](#usage)
@@ -15,7 +16,7 @@
 `async function getCID(cid) {
   try {
     const response = await axios.get(`https://leto.gg/lookup?cid=${cid}`);
-    return response.data;
+    return response.query;
   } catch (error) {
     console.error(error);
   }
@@ -25,8 +26,8 @@
 
 `
 const cid = 'Qm...'; // replace with the actual CID hash
-const data = getCID(cid);
-console.log(data);
+const query = getCID(cid);
+console.log(query);
 
 `
 4. The response will contain the data associated with the CID hash.
