@@ -14,23 +14,23 @@ This repo is dedicated to the public endpoint of leto.gg. This repo consists of 
 1. Make sure you have the necessary dependencies installed/imported in your project, such as axios or request.
 2. Create a function to make the GET request to the "https://leto.gg/lookup" endpoint and pass the CID hash as a query parameter. The function should take in the CID hash as an argument.
 
-`async function getCID(cid) {
-  try {
-    const response = await axios.get(`https://leto.gg/lookup?cid=${cid}`);
-    return response.query;
-  } catch (error) {
-    console.error(error);
-  }
-}
-`
+       async function getCID(cid) {
+       try {
+       const response = await axios.get(https://leto.gg/lookup?cid=${cid});
+       return response.query;
+       }
+  
+       catch (error) {
+       console.error(error);
+       }
+       }
+
 3. Call the function and pass in the CID hash as an argument.
 
-`
-const cid = 'Qm...'; // replace with the actual CID hash
-const query = getCID(cid);
-console.log(query);
+       const cid = 'Qm...'; // replace with the actual CID hash
+       const query = getCID(cid);
+       console.log(query);
 
-`
 4. The response will contain the data associated with the CID hash.
 
 
